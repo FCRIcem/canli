@@ -716,6 +716,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 }
+
 /* footer bitiş */
 
 
@@ -849,3 +850,29 @@ button {
     display: inline-block;
 }
 /* navbar açılır kapanır ok img hareketleri  */
+
+@media(max-width: 768px){
+    body{
+        max-width: 768px;
+    }
+    img{
+        max-width: 500px;
+    }
+    .carousel-item{
+        max-width: 765px;
+    }
+    .webTemplatesImg{
+        max-width: 500px;
+    }
+    .codeEditorBtn{
+       margin-right: 0px;
+       margin-left: 132px;
+    }
+    .littleBoxDiv{
+        padding-right: 3rem;
+    }
+    .littleBox{
+        margin-left: 5rem;
+        padding: 15px;
+    }
+}
