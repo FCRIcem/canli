@@ -139,6 +139,18 @@ a:-webkit-any-link {
 	}
 }
 /* footer------------------------------------------******************* */
+@media (max-width: 800px) {
+    #sol-kategori-css1 {
+      display: none;
+    }
+    #içerik-css1{
+        margin-left:0!important;
+    }
+    #içerik-css2{
+        display:none;
+    }
+  }
+  
 </style>
 <body>
 
@@ -147,11 +159,11 @@ a:-webkit-any-link {
 
     </div>
 
-    <div class="container-fluid d-flex p-0 mt-3">
-        <div class="row">
+    <div class="container-fluid d-flex p-0 mt-3"  >
+        <div class="row" id="sol-kategori-css1">
             {% include "partials/_kategori.html" %}
         </div>
-        <div class="row" style="margin-left:240px;">
+        <div class="row overflow-x-hidden" style="margin-left:240px;" id="içerik-css1">
             <div class="col-10 mt-5 pt-5 ps-5 ">
                 {% comment %} hata mesajı {% endcomment %}
                 {% if page_obj.object_list|length == 0 %}
@@ -216,7 +228,7 @@ a:-webkit-any-link {
                                         
         
             </div>
-            <div class="col-2 mt-5 border ">
+            <div class="col-2 mt-5 border " id="içerik-css2">
                 <div class="mt-5">
                     <img src="https://images01.nicepagecdn.com/page/55/87/tr/web-sitesi-sablonu-preview-5587790.jpg" class="w-75 ms-4 " alt="">
                 </div>
