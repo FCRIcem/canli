@@ -20,6 +20,7 @@ from .views import *
 urlpatterns = [
     path('react/',reactApp,name='index2'),
     path('admin/', admin.site.urls),
+    path('game/',beyzax,name='game'),
     path("w3/",include('quiz.urls')),
     path("",include('kurslar.urls')),
 ]
